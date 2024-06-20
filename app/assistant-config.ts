@@ -1,12 +1,4 @@
-let assistantId = ""; // Default value
-
-export const setAssistantId = (newAssistantId) => {
-  assistantId = newAssistantId;
-};
-
-export const getAssistantId = () => {
-  return assistantId;
-};
+export let assistantId = ""; // set your assistant ID here
 
 if (assistantId === "") {
   assistantId = process.env.OPENAI_ASSISTANT_ID;
